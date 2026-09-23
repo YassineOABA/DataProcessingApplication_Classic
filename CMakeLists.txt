@@ -31,6 +31,7 @@ add_executable(data_processing_app
     core/models/record.cpp
     core/models/dataSet.cpp
     core/services/transformer.cpp
+    io/textParser.cpp
 )
 
 target_include_directories(data_processing_app PRIVATE
@@ -45,6 +46,10 @@ add_executable(io_tests
     tests/test_io.cpp
     io/writer.cpp
     io/textParser.cpp
+    core/models/field.cpp
+    core/models/record.cpp
+    core/models/dataSet.cpp
+    core/services/transformer.cpp
 )
 
 target_include_directories(io_tests PRIVATE
